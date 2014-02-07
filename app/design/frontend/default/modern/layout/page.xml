@@ -74,7 +74,7 @@ Default layout, loads most of the pages
                 <block type="page/html_wrapper" name="top.bar" as="topBar" translate="label">
                     <label>Breadcrumbs</label>
                     <action method="setElementClass"><value>top-bar</value></action>
-                    <block type="page/html_breadcrumbs" name="breadcrumbs" as="breadcrumbs"/>
+
                 </block>
                 <block type="page/html_wrapper" name="top.container" as="topContainer" translate="label">
                     <label>Page Header</label>

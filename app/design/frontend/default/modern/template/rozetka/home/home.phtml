@@ -1,0 +1,38 @@
+<?php
+$rndText = array(
+    'Акция',
+    'Суперцена',
+    'Скидки',
+    'Только сегодня',
+);
+$productCollection = $this->getHomepageProductCollection()
+?>
+<?php foreach ( $productCollection as $product ): $product->load($product->getId())?>
+    <div class="home-product-item">
+        <div class="rnd-header">
+            <?php
+            if($product->getSpecialPrice()){
+                echo "Распродажа";
+            }else{
+                echo $rndText[rand(0,count($rndText)-1)];
+            }
+            ?>
+        </div>
+        <div class="himg">
+            <a href="<?php echo $product->getProductUrl()?>">
+            <img src="<?php echo (string)Mage::helper('catalog/image')->init($product, 'image')->resize(150) ?>" />
+            </a>
+        </div>
+        <div class="hname">
+            <a href="<?php echo $product->getProductUrl()?>">
+                <?php echo $product->getName() ?>
+             </a>
+        </div>
+        <div>
+            <?php
+
+            echo $this->getPriceHtml($product);
+            ?>
+        </div>
+    </div>
+<?php endforeach ?>

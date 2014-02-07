@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Rozetka_Page>
+            <version>1.0.0</version>
+        </Rozetka_Page>
+    </modules>
+    <global>
+        
+        <blocks>
+            <rozetka>
+                <class>Rozetka_Page_Block</class>
+            </rozetka>
+        </blocks>
+        <helpers>
+            <rozetka>
+                <class>Rozetka_Page_Helper</class>
+            </rozetka>
+        </helpers>
+		
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <rozetka>
+                    <file>rozetka_page.xml</file>
+                </rozetka>
+            </updates>
+        </layout>
+    </frontend>
+</config>

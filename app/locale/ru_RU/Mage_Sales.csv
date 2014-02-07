@@ -13,6 +13,7 @@
 "Action","Действие"
 "Actions","Действия "
 "Add","Добавить"
+"Checkout","Оформить заказ"
 "Add Gift Messsage","Добавить поздравительное сообщение"
 "Add New Address","Добавить новый адрес"
 "Add Order Comments","Добавить комментарии к заказу"
@@ -511,4 +512,3 @@
 "You have placed no orders.","У вас пока нет оформленных заказов."
 "ZIP/Post Code","Почтовый индекс"
 "separate by "",""","символ разделения "","""
-"My Orders","My Orders"

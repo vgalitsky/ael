@@ -29,19 +29,39 @@
 ?>
 <div class="header-container">
     <div class="header">
-        <?php if ($this->getIsHomePage()):?>
-        <h1 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a></h1>
-        <?php else:?>
-        <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
-        <?php endif?>
-        <p class="top-promo" title="<?php echo $this->__('Free Shipping on orders over 50$'); ?>"><?php echo $this->__('Free Shipping on orders over 50$'); ?></p>
+        <?php //echo $this->getChildHtml('top.static.menu');?>
+        <div class="quick-access">
+            <?php //echo $this->getChildHtml('store_language') ?>
+            <?php //echo $this->getChildHtml('topLinks') ?>
+            <?php echo $this->getChildHtml('top.static.menu'); ?>
+        </div>
+        <div class="top-middle">
+            <?php if ($this->getIsHomePage()): ?>
+                <h1 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a
+                        href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>"
+                        class="logo"><img src="<?php echo $this->getLogoSrc() ?>"
+                                          alt="<?php echo $this->getLogoAlt() ?>"/></a></h1>
+            <?php else: ?>
+                <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>"
+                   class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img
+                        src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>"/></a>
+            <?php endif ?>
+            <!--p class="top-promo" title="<?php echo $this->__('Free Shipping on orders over 50$'); ?>"><?php echo $this->__('Free Shipping on orders over 50$'); ?></p-->
+            <?php echo $this->getChildHtml('top.middle.bar') ?>
+        </div>
+        <div style="clear:both;"></div>
+        <?php echo $this->getChildHtml('topBar') ?>
+        <div class="second-hand">
+            <a href="/purchase-department.html">Отдел снабжения берет на реализацию. Предлагайте ваш товар.</a>
+        </div>
+        <div style="clear:both;margin-bottom:10px;"></div>
+
         <?php echo $this->getChildHtml('topMenu') ?>
+
     </div>
-    <div class="quick-access">
-        <?php echo $this->getChildHtml('store_language') ?>
-        <p class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?></p>
-        <?php echo $this->getChildHtml('topLinks') ?>
+    <div class="quick-access" style="clear:both;">
+        <?php echo $this->getChildHtml('breadcrumbs') ?>
     </div>
-    <?php echo $this->getChildHtml('topBar') ?>
+
     <?php echo $this->getChildHtml('topContainer'); ?>
 </div>

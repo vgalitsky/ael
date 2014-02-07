@@ -197,7 +197,7 @@
                 <Mage_Payment/>
             </depends>
         </Mage_Paygate>
-        <Mage_Paypal>
+        <!--Mage_Paypal>
             <active>true</active>
             <codePool>core</codePool>
             <depends>
@@ -205,8 +205,8 @@
                 <Mage_Checkout/>
                 <Mage_Sales/>
             </depends>
-        </Mage_Paypal>
-        <Mage_PaypalUk>
+        </Mage_Paypal-->
+        <!--Mage_PaypalUk>
             <active>true</active>
             <codePool>core</codePool>
             <depends>
@@ -215,7 +215,7 @@
                 <Mage_Sales/>
                 <Mage_Paypal/>
             </depends>
-        </Mage_PaypalUk>
+        </Mage_PaypalUk-->
         <Mage_GoogleCheckout>
             <active>true</active>
             <codePool>core</codePool>

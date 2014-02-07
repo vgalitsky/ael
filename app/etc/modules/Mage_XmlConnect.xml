@@ -27,7 +27,7 @@
 -->
 <config>
     <modules>
-        <Mage_XmlConnect>
+        <!--Mage_XmlConnect>
             <active>true</active>
             <codePool>core</codePool>
             <depends>
@@ -44,6 +44,6 @@
                 <Mage_Rating />
                 <Mage_Review />
             </depends>
-        </Mage_XmlConnect>
+        </Mage_XmlConnect-->
     </modules>
 </config>

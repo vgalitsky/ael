@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * @category   Concept-Labs
+ * @package    Concept-Labs
+ * @author     concept.galitsky@gmail.com
+ */
+ -->
+<config>
+    <modules>
+	<Rozetka_Page>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Rozetka_Page>
+    </modules>
+</config> 
